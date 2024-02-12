@@ -1,8 +1,3 @@
-# CCDC 2024 - Email
-
-        Prepared by Gabe Ron on 2024-01-23
-        Edited by Gabe Ron on 2024-01-30
-
 
 __**TAKE SCREENSHOTS**__
 
