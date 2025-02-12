@@ -1,0 +1,96 @@
+
+apt install dovecot-core dovecot-pop3d
+echo listen\ =\ \* >> /etc/dovecot/dovecot.conf
+sed -i 's/auth_mechanisms = plain/auth_mechanisms = plain login/' /etc/dovecot/conf.d/10-auth.conf
+echo disable_plaintext_auth\ =\ no >> /etc/dovecot/conf.d/10-auth.conf
+sed -i 's/^ssl = yes/ssl = no/' /etc/dovecot/conf.d/10-ssl.conf
+#add users
+useradd -m -s /bin/bash abnederveld && printf "master\nmaster\n" | passwd abnederveld
+useradd -m -s /bin/bash abwise && printf "spider\nspider\n" | passwd abwise
+useradd -m -s /bin/bash agbates && printf "love\nlove\n" | passwd agbates
+useradd -m -s /bin/bash amfleming && printf "test\ntest\n" | passwd amfleming
+useradd -m -s /bin/bash amfortune && printf "porsche\nporsche\n" | passwd amfortune
+useradd -m -s /bin/bash asroper && printf "booboo\nbooboo\n" | passwd asroper
+useradd -m -s /bin/bash atober && printf "booger\nbooger\n" | passwd atober
+useradd -m -s /bin/bash bamcdonald && printf "angel\nangel\n" | passwd bamcdonald
+useradd -m -s /bin/bash bbcarreira && printf "james\njames\n" | passwd bbcarreira
+useradd -m -s /bin/bash bdconte && printf "edward\nedward\n" | passwd bdconte
+useradd -m -s /bin/bash bdkasper && printf "junior\njunior\n" | passwd bdkasper
+useradd -m -s /bin/bash bhcrouse && printf "dakota\ndakota\n" | passwd bhcrouse
+useradd -m -s /bin/bash brwake && printf "george\ngeorge\n" | passwd brwake
+useradd -m -s /bin/bash cbhaylock && printf "rabbit\nrabbit\n" | passwd cbhaylock
+useradd -m -s /bin/bash cddunn && printf "jason\njason\n" | passwd cddunn
+useradd -m -s /bin/bash cdsims && printf "amanda\namanda\n" | passwd cdsims
+useradd -m -s /bin/bash cmnazzal && printf "matrix\nmatrix\n" | passwd cmnazzal
+useradd -m -s /bin/bash crvoltz && printf "cameron\ncameron\n" | passwd crvoltz
+useradd -m -s /bin/bash cthagen && printf "iwantu\niwantu\n" | passwd cthagen
+useradd -m -s /bin/bash cthumphrey && printf "baseball\nbaseball\n" | passwd cthumphrey
+useradd -m -s /bin/bash dblaware && printf "dallas\ndallas\n" | passwd dblaware
+useradd -m -s /bin/bash disteinhour && printf "united\nunited\n" | passwd disteinhour
+useradd -m -s /bin/bash djfox && printf "cowboys\ncowboys\n" | passwd djfox
+useradd -m -s /bin/bash djverspoor && printf "nascar\nnascar\n" | passwd djverspoor
+useradd -m -s /bin/bash dmbrubaker && printf "black\nblack\n" | passwd dmbrubaker
+useradd -m -s /bin/bash dmdehart && printf "jackson\njackson\n" | passwd dmdehart
+useradd -m -s /bin/bash dtverspoor && printf "charles\ncharles\n" | passwd dtverspoor
+useradd -m -s /bin/bash dwbelforte && printf "scooby\nscooby\n" | passwd dwbelforte
+useradd -m -s /bin/bash ekbarbee && printf "brandy\nbrandy\n" | passwd ekbarbee
+useradd -m -s /bin/bash ekwashington && printf "aaaaaa\naaaaaa\n" | passwd ekwashington
+useradd -m -s /bin/bash elwhitaker && printf "wizard\nwizard\n" | passwd elwhitaker
+useradd -m -s /bin/bash emhall && printf "tennis\ntennis\n" | passwd emhall
+useradd -m -s /bin/bash esswift && printf "buster\nbuster\n" | passwd esswift
+useradd -m -s /bin/bash ganguyen && printf "bear\nbear\n" | passwd ganguyen
+useradd -m -s /bin/bash grporter && printf "shadow\nshadow\n" | passwd grporter
+useradd -m -s /bin/bash hcbailliet && printf "guitar\nguitar\n" | passwd hcbailliet
+useradd -m -s /bin/bash hjconte && printf "thomas\nthomas\n" | passwd hjconte
+useradd -m -s /bin/bash hjliston && printf "firebird\nfirebird\n" | passwd hjliston
+useradd -m -s /bin/bash hsstobb && printf "superman\nsuperman\n" | passwd hsstobb
+useradd -m -s /bin/bash jcblume && printf "bond007\nbond007\n" | passwd jcblume
+useradd -m -s /bin/bash jcedmonds && printf "turtle\nturtle\n" | passwd jcedmonds
+useradd -m -s /bin/bash jjnelson && printf "hunter\nhunter\n" | passwd jjnelson
+useradd -m -s /bin/bash jjtanner && printf "bulldog\nbulldog\n" | passwd jjtanner
+useradd -m -s /bin/bash jpcrocker && printf "computer\ncomputer\n" | passwd jpcrocker
+useradd -m -s /bin/bash jrsullivan && printf "sunshine\nsunshine\n" | passwd jrsullivan
+useradd -m -s /bin/bash jshaygood && printf "golf\ngolf\n" | passwd jshaygood
+useradd -m -s /bin/bash jtfowler && printf "2000\n2000\n" | passwd jtfowler
+useradd -m -s /bin/bash kahalladay && printf "trustno1\ntrustno1\n" | passwd kahalladay
+useradd -m -s /bin/bash kbdavila && printf "letmein\nletmein\n" | passwd kbdavila
+useradd -m -s /bin/bash kdshisler && printf "bailey\nbailey\n" | passwd kdshisler
+useradd -m -s /bin/bash kgowens && printf "mickey\nmickey\n" | passwd kgowens
+useradd -m -s /bin/bash kkswift && printf "purple\npurple\n" | passwd kkswift
+useradd -m -s /bin/bash kmgreer && printf "andrew\nandrew\n" | passwd kmgreer
+useradd -m -s /bin/bash kpcoakley && printf "chelsea\nchelsea\n" | passwd kpcoakley
+useradd -m -s /bin/bash ksbricout && printf "hockey\nhockey\n" | passwd ksbricout
+useradd -m -s /bin/bash kslarsen && printf "zxcvbn\nzxcvbn\n" | passwd kslarsen
+useradd -m -s /bin/bash ksmurray && printf "xxxxxxxx\nxxxxxxxx\n" | passwd ksmurray
+useradd -m -s /bin/bash kvanthony && printf "john\njohn\n" | passwd kvanthony
+useradd -m -s /bin/bash ljblume && printf "johnny\njohnny\n" | passwd ljblume
+useradd -m -s /bin/bash ljmartisek && printf "fish\nfish\n" | passwd ljmartisek
+useradd -m -s /bin/bash magarverick && printf "pepper\npepper\n" | passwd magarverick
+useradd -m -s /bin/bash mbday && printf "butter\nbutter\n" | passwd mbday
+useradd -m -s /bin/bash melee && printf "jessica\njessica\n" | passwd melee
+useradd -m -s /bin/bash mgspear && printf "boomer\nboomer\n" | passwd mgspear
+useradd -m -s /bin/bash mkweirich && printf "abc123\nabc123\n" | passwd mkweirich
+useradd -m -s /bin/bash mslukes && printf "batman\nbatman\n" | passwd mslukes
+useradd -m -s /bin/bash njkendrick && printf "debbie\ndebbie\n" | passwd njkendrick
+useradd -m -s /bin/bash pbminard && printf "tiger\ntiger\n" | passwd pbminard
+useradd -m -s /bin/bash pmlogan && printf "robert\nrobert\n" | passwd pmlogan
+useradd -m -s /bin/bash ptferguson && printf "brandon\nbrandon\n" | passwd ptferguson
+useradd -m -s /bin/bash pttyree && printf "xxxxxx\nxxxxxx\n" | passwd pttyree
+useradd -m -s /bin/bash rasimpson && printf "charlie\ncharlie\n" | passwd rasimpson
+useradd -m -s /bin/bash rbdaly && printf "thx1138\nthx1138\n" | passwd rbdaly
+useradd -m -s /bin/bash rebennett && printf "winter\nwinter\n" | passwd rebennett
+useradd -m -s /bin/bash rjcavallaro && printf "6969\n6969\n" | passwd rjcavallaro
+useradd -m -s /bin/bash rmhunter && printf "1212\n1212\n" | passwd rmhunter
+useradd -m -s /bin/bash rsruhlin && printf "soccer\nsoccer\n" | passwd rsruhlin
+useradd -m -s /bin/bash sdharding && printf "doctor\ndoctor\n" | passwd sdharding
+useradd -m -s /bin/bash sdtakimoto && printf "tiffany\ntiffany\n" | passwd sdtakimoto
+useradd -m -s /bin/bash skroper && printf "peanut\npeanut\n" | passwd skroper
+useradd -m -s /bin/bash sswallace && printf "654321\n654321\n" | passwd sswallace
+useradd -m -s /bin/bash stbenoit && printf "monkey\nmonkey\n" | passwd stbenoit
+useradd -m -s /bin/bash tbcort && printf "killer\nkiller\n" | passwd tbcort
+useradd -m -s /bin/bash tbreifel && printf "knight\nknight\n" | passwd tbreifel
+useradd -m -s /bin/bash tgkapetanovic && printf "starwars\nstarwars\n" | passwd tgkapetanovic
+useradd -m -s /bin/bash trkabir && printf "andrea\nandrea\n" | passwd trkabir
+useradd -m -s /bin/bash wdkremer && printf "spanky  \nspanky  \n" | passwd wdkremer
+#restart 
+systemctl restart dovecot
